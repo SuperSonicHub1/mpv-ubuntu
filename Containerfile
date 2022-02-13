@@ -16,7 +16,7 @@ ARG VERSION="v0.34.0"
 ARG DEBIAN_FRONTEND=noninteractive
 
 # Standard update and upgrade
-RUN apt-get update && apt-get upgrade
+RUN apt-get update -y && apt-get upgrade -y
 
 # Need Git to download all this junk
 RUN apt-get install -y git
